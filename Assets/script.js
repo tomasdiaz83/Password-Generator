@@ -11,7 +11,7 @@ var criteriaArrays = {
   numeric : true,
   numbers : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
   specialCharacters : true,
-  special : [' ', ' ! ', ' " ', ' # ', ' $ ', ' % ', ' & ', " ' ", ' ( ', ' ) ', ' * ', ' + ', ' , ', ' - ', ' . ', ' / ', ' : ', ' ; ', ' < ', ' = ', ' > ', ' ? ', ' @ ', ' [ ', ' \ ', ' ] ', ' ^ ', ' _ ', ' ` ',' { ', ' } ', ' ~ ',],
+  special : [' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '}', '~']
 }
 // Write password to the #password input
 function writePassword() {
@@ -125,15 +125,17 @@ function writePassword() {
     var passwordArray = [];
 
     //iterate through the array
-   
+    for (i = 0; i < criteriaArrays.length; i++) {
+      var index = Math.floor((Math.random() * characterArray.length));
+      passwordArray.push(characterArray[index]);
+    }
 
-      //randomly select from true criteria
+    //turn password array into strong
+    var passwordString = passwordArray.join('');
 
-      //select character based on criteria
+    console.log(passwordString)
 
-    //turn array into string
-
-    return password;
+    return passwordString;
   }
 
   var password = generatePassword();
