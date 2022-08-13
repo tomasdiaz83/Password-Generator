@@ -1,15 +1,15 @@
 # Password Generator (Refactor)
-Building a password generator utilizing code supplied by Bootcamp.
+Building a Password Generator utilizing code supplied by Bootcamp.
 
 ## Description
 
-The password generator will, through window prompts, obtain criteria (length, alphabetic cases, numerics, and special characters) from a user that will be employed in creating a randomized password.
+The Password Generator will, through window prompts, obtain criteria (length, alphabetic cases, numerics, and special characters) from a user that will be employed in creating a randomized password.
 
 Limiting myself to window prompts, efforts were made to ensure a common-sense UI experience. This included explaining input errors and specifying their fix to the user while ensuring that "cancel" was treated as it appears - to cancel the generation currently going on.
 
 ## Installation and Usage
 
-Web application, hosted at: 
+Web application, hosted at: https://tomasdiaz83.github.io/Password-Generator/
 
 ## Screenshots
 
@@ -23,7 +23,8 @@ The following images show the web application's appearance and functionality:
 
 ## Credits
 
-Code provide by Bootcamp
+Code provided by Bootcamp
+
 Collaborators: Salissa Hernandez (https://github.com/Salissa4/), Handruliz Nova ()
 
 ## License
