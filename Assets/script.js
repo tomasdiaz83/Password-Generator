@@ -38,9 +38,7 @@ function writePassword() {
     //If i is null (cancel was selected), will throw an error, and thus end the program.
     i = i.toLowerCase();
 
-    if (!i) {
-      return;
-    }else if (i == "yes"  || i == "y") {
+    if (i == "yes"  || i == "y") {
       criteriaArrays.upperCase = true;
     }
     else if (i == "no" || i == "n") {
@@ -58,9 +56,7 @@ function writePassword() {
     //If i is null (cancel was selected), will throw an error, and thus end the program.
     i = i.toLowerCase();
 
-    if (!i) {
-      return;
-    }else if (i == "yes"  || i == "y") {
+    if (i == "yes"  || i == "y") {
       criteriaArrays.lowerCase = true;
     }
     else if (i == "no" || i == "n") {
@@ -78,9 +74,7 @@ function writePassword() {
     //If i is null (cancel was selected), will throw an error, and thus end the program.
     i = i.toLowerCase();
 
-    if (!i) {
-      return;
-    }else if (i == "yes"  || i == "y") {
+    if (i == "yes"  || i == "y") {
       criteriaArrays.numeric = true;
     }
     else if (i == "no" || i == "n") {
@@ -98,9 +92,7 @@ function writePassword() {
     //If i is null (cancel was selected), will throw an error, and thus end the program.
     i = i.toLowerCase();
 
-    if (!i) {
-      return;
-    }else if (i == "yes"  || i == "y") {
+    if (i == "yes"  || i == "y") {
       criteriaArrays.specialCharacters = true;
     }
     else if (i == "no" || i == "n") {
