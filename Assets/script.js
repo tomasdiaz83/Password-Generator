@@ -21,7 +21,7 @@ function writePassword() {
   function passwordLength() {
     var i = window.prompt("How long will your password be (8-128)?");
     
-    if (i >= 8 && length <= 128){
+    if (i >= 8 && i <= 128){
       criteriaArrays.length = i;
     } else if (i == null){
       return;
